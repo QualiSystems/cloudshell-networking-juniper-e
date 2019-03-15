@@ -58,7 +58,7 @@ class JuniperESNMPAutoload(object):
         self.logger.info("*" * 70)
         self.logger.info("Start SNMP discovery process .....")
 
-        self.load_cisco_mib()
+        # self.load_cisco_mib()
         # self.snmp_handler.load_mib(["CISCO-PRODUCTS-MIB", "CISCO-ENTITY-VENDORTYPE-OID-MIB"])
         self._get_device_details()
         self._load_snmp_tables()

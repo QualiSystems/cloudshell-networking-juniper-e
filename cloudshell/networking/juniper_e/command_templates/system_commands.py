@@ -1,6 +1,6 @@
 from collections import OrderedDict
 from cloudshell.cli.command_template.command_template import CommandTemplate
-from cloudshell.networking.juniper.command_templates.generic_action_error_map import ACTION_MAP, ERROR_MAP
+from cloudshell.networking.juniper_e.command_templates.generic_action_error_map import ACTION_MAP, ERROR_MAP
 
 _ACTION_MAP = OrderedDict([(r'\[[Yy]es,[Nn]o\]', lambda session, logger: session.send_line('yes', logger))])
 _ACTION_MAP.update(ACTION_MAP)

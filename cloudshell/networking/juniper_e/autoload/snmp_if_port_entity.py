@@ -6,7 +6,8 @@ class SnmpIfPortEntity(SnmpIfEntity):
     IF_TYPE = "ifType"
     IF_MTU = "ifMtu"
     IF_SPEED = "ifHighSpeed"
-    IF_NAME = "ifDescr"
+    # IF_NAME = "ifDescr"
+    IF_NAME = "ifName"
     IF_MAC = "ifPhysAddress"
     IF_ALIAS = "ifAlias"
 

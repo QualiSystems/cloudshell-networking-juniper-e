@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from cloudshell.devices.runners.firmware_runner import FirmwareRunner
-from cloudshell.networking.juniper.flows.juniper_firmware_flow import JuniperFirmwareFlow
+from cloudshell.networking.juniper_e.flows.juniper_firmware_flow import JuniperFirmwareFlow
 
 
 class JuniperFirmwareRunner(FirmwareRunner):

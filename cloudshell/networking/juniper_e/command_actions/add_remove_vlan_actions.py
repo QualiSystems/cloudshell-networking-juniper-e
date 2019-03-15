@@ -3,7 +3,7 @@ import re
 from cloudshell.cli.cli_service import CliService
 from cloudshell.cli.command_template.command_template_executor import CommandTemplateExecutor
 from cloudshell.cli.session.session_exceptions import CommandExecutionException
-from cloudshell.networking.juniper.command_templates import add_remove_vlan as command_template
+from cloudshell.networking.juniper_e.command_templates import add_remove_vlan as command_template
 
 
 class AddRemoveVlanActions(object):

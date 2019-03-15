@@ -1,6 +1,6 @@
 from cloudshell.cli.cli_service import CliService
 from cloudshell.cli.command_template.command_template_executor import CommandTemplateExecutor
-from cloudshell.networking.juniper.command_templates import commit_rollback as command_template
+from cloudshell.networking.juniper_e.command_templates import commit_rollback as command_template
 
 
 class CommitRollbackActions(object):

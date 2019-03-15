@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from cloudshell.devices.runners.configuration_runner import ConfigurationRunner
-from cloudshell.networking.juniper.flows.juniper_restore_flow import JuniperRestoreFlow
-from cloudshell.networking.juniper.flows.juniper_save_flow import JuniperSaveFlow
+from cloudshell.networking.juniper_e.flows.juniper_restore_flow import JuniperRestoreFlow
+from cloudshell.networking.juniper_e.flows.juniper_save_flow import JuniperSaveFlow
 
 
 class JuniperConfigurationRunner(ConfigurationRunner):

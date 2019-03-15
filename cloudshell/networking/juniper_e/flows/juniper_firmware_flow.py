@@ -1,6 +1,6 @@
 import time
 from cloudshell.devices.flows.cli_action_flows import LoadFirmwareFlow
-from cloudshell.networking.juniper.command_actions.system_actions import SystemActions
+from cloudshell.networking.juniper_e.command_actions.system_actions import SystemActions
 
 
 class JuniperFirmwareFlow(LoadFirmwareFlow):

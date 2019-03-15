@@ -1,8 +1,8 @@
 from cloudshell.cli.session.session_exceptions import CommandExecutionException
 from cloudshell.devices.flows.cli_action_flows import RemoveVlanFlow
-from cloudshell.networking.juniper.command_actions.add_remove_vlan_actions import AddRemoveVlanActions
-from cloudshell.networking.juniper.command_actions.commit_rollback_actions import CommitRollbackActions
-from cloudshell.networking.juniper.helpers.add_remove_vlan_helper import AddRemoveVlanHelper, VlanRangeOperations, \
+from cloudshell.networking.juniper_e.command_actions.add_remove_vlan_actions import AddRemoveVlanActions
+from cloudshell.networking.juniper_e.command_actions.commit_rollback_actions import CommitRollbackActions
+from cloudshell.networking.juniper_e.helpers.add_remove_vlan_helper import AddRemoveVlanHelper, VlanRangeOperations, \
     VlanRange
 
 

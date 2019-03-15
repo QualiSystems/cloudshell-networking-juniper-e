@@ -42,7 +42,7 @@ class SnmpIfTable(object):
 
     def _get_if_entities(self):
         for index in self._if_table.keys():
-            interface_name = self._if_table.get(index, {}).get("ifDescr", "")
+            interface_name = self._if_table.get(index, {}).get("ifName", "")
             if "." in interface_name:
                 continue
             if any([port_channel for port_channel in self.PORT_CHANNEL_NAME if port_channel in interface_name.lower()]):
@@ -69,18 +69,18 @@ class SnmpIfTable(object):
         """
 
         self._logger.info('Start loading MIB tables:')
-        self._if_table = self._snmp.get_table('IF-MIB', "ifDescr")
+        self._if_table = self._snmp.get_table('IF-MIB', "ifName")
         self._logger.info('ifIndex table loaded')
 
         self._logger.info('MIB Tables loaded successfully')
 
     def get_if_index_from_port_name(self, port_name, port_filter_list):
-        port_if_re = re.findall('\d+', port_name)
+        port_if_re = re.search(r'(\d+/\d+/\d+)', port_name)
         if port_if_re:
-            if_table_re = "/".join(port_if_re)
+            if_table_re = port_if_re.group(1)
             for interface in self.if_ports:
                 if not re.search("ethernet|other", interface.if_type, re.IGNORECASE):
                     continue
-                if re.search(r"^(?!.*null|.*{0})\D*{1}(/\D+|$)".format(port_filter_list, if_table_re),
-                             interface.if_name, re.IGNORECASE):
+                if_pattern = r"^(?!.*null|.*{0})\D*{1}(/\D+|$)".format(port_filter_list, if_table_re)
+                if re.search(if_pattern, interface.if_name, re.IGNORECASE):
                     return interface

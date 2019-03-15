@@ -1,5 +1,5 @@
 from cloudshell.cli.command_template.command_template import CommandTemplate
-from cloudshell.networking.juniper.command_templates.generic_action_error_map import ERROR_MAP
+from cloudshell.networking.juniper_e.command_templates.generic_action_error_map import ERROR_MAP
 
 CREATE_VLAN = CommandTemplate('set vlans {vlan_name} vlan-id {vlan_id}', error_map=ERROR_MAP)
 CONFIGURE_VLAN_QNQ = CommandTemplate('set vlans {vlan_name} dot1q-tunneling', error_map=ERROR_MAP)

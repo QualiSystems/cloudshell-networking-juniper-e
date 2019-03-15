@@ -1,9 +1,9 @@
 from cloudshell.cli.session.session_exceptions import CommandExecutionException
 from cloudshell.devices.flows.cli_action_flows import EnableSnmpFlow
-from cloudshell.networking.juniper.cli.juniper_cli_handler import JuniperCliHandler
-from cloudshell.networking.juniper.command_actions.commit_rollback_actions import CommitRollbackActions
-from cloudshell.networking.juniper.command_actions.enable_disable_snmp_actions import EnableDisableSnmpActions
-from cloudshell.networking.juniper.command_actions.enable_disable_snmp_v3_actions import EnableDisableSnmpV3Actions
+from cloudshell.networking.juniper_e.cli.juniper_cli_handler import JuniperCliHandler
+from cloudshell.networking.juniper_e.command_actions.commit_rollback_actions import CommitRollbackActions
+from cloudshell.networking.juniper_e.command_actions.enable_disable_snmp_actions import EnableDisableSnmpActions
+from cloudshell.networking.juniper_e.command_actions.enable_disable_snmp_v3_actions import EnableDisableSnmpV3Actions
 from cloudshell.snmp.snmp_parameters import SNMPV2WriteParameters, SNMPV3Parameters
 
 

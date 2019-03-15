@@ -1,6 +1,6 @@
 from cloudshell.devices.flows.cli_action_flows import ShutdownFlow
-from cloudshell.networking.juniper.cli.juniper_cli_handler import JuniperCliHandler
-from cloudshell.networking.juniper.command_actions.system_actions import SystemActions
+from cloudshell.networking.juniper_e.cli.juniper_cli_handler import JuniperCliHandler
+from cloudshell.networking.juniper_e.command_actions.system_actions import SystemActions
 
 
 class JuniperShutdownFlow(ShutdownFlow):

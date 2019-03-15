@@ -3,9 +3,9 @@
 
 from cloudshell.cli.command_mode_helper import CommandModeHelper
 from cloudshell.devices.cli_handler_impl import CliHandlerImpl
-from cloudshell.networking.juniper.cli.juniper_ssh_session import JuniperSSHSession
-from cloudshell.networking.juniper.cli.juniper_telnet_session import JuniperTelnetSession
-from cloudshell.networking.juniper.cli.junipr_command_modes import DefaultCommandMode, ConfigCommandMode
+from cloudshell.networking.juniper_e.cli.juniper_ssh_session import JuniperSSHSession
+from cloudshell.networking.juniper_e.cli.juniper_telnet_session import JuniperTelnetSession
+from cloudshell.networking.juniper_e.cli.junipr_command_modes import DefaultCommandMode, ConfigCommandMode
 
 
 class JuniperCliHandler(CliHandlerImpl):

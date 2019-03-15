@@ -1,5 +1,5 @@
 from cloudshell.cli.command_template.command_template import CommandTemplate
-from cloudshell.networking.juniper.command_templates.generic_action_error_map import ACTION_MAP, ERROR_MAP
+from cloudshell.networking.juniper_e.command_templates.generic_action_error_map import ACTION_MAP, ERROR_MAP
 
 CREATE_VIEW = CommandTemplate('set snmp view SNMPSHELLVIEW oid .1 include', action_map=ACTION_MAP, error_map=ERROR_MAP)
 

@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from cloudshell.devices.runners.connectivity_runner import ConnectivityRunner
-from cloudshell.networking.juniper.flows.juniper_add_vlan_flow import JuniperAddVlanFlow
-from cloudshell.networking.juniper.flows.juniper_remove_vlan_flow import JuniperRemoveVlanFlow
+from cloudshell.networking.juniper_e.flows.juniper_add_vlan_flow import JuniperAddVlanFlow
+from cloudshell.networking.juniper_e.flows.juniper_remove_vlan_flow import JuniperRemoveVlanFlow
 
 
 class JuniperConnectivityRunner(ConnectivityRunner):
